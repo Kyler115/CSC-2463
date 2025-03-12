@@ -97,7 +97,7 @@ function mouseClicked()
 
 // function mouseClicked() 
 // {
-//   if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) 
+//   if (mouseX >= 400 && mouseY <= 400) 
 //   {
 //     Tone.start(); 
 
