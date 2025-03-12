@@ -58,6 +58,7 @@ function draw()
 
 function mouseClicked() 
 {
+  Tone.start();
   if (mouseX<=400 && mouseY<=400)
   {
     imageFlag = true;
