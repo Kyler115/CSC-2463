@@ -109,6 +109,7 @@ function setup()
 function draw() 
 {
   background(220);  
+  part1.start(Tone.now());
   switch(gameStates)
   {
     case GameStates.START:
@@ -117,7 +118,6 @@ function draw()
       image(bug,100,50,1300,300);
       text("BUG SQUISH",width/2,height/2);
       text("Press ENTER to start!",width/2,height/1.7);
-      part1.start(Tone.now());
       break;
 
     case GameStates.PLAY:
@@ -331,16 +331,6 @@ function mouseClicked()
       }
     }     
 }
-
-// function keyReleased() {
-//   if (key === "a") {
-//     part1.stop()
-//   } else if (key === "s") {
-//     seq1.stop()
-//   } else if (key === "d") {
-//     part2.stop()
-//   }
-// }
 
 function death() 
 {
