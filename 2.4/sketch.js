@@ -112,7 +112,6 @@ function draw()
   switch(gameStates)
   {
     case GameStates.START:
-      Tone.start();
       textAlign(CENTER,CENTER);
       textSize(18);
       image(bug,100,50,1300,300);
@@ -319,6 +318,7 @@ class SpriteAnimation
 
 function mouseClicked()
 {
+  Tone.start();
   for (let bug of bugList) 
     {
       if(mouseX >= bug.x && mouseX <= bug.x + 80 && mouseY >= bug.y && mouseY <= bug.y + 80 && bug.dead == false) 
