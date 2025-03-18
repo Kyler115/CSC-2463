@@ -112,6 +112,7 @@ function draw()
   switch(gameStates)
   {
     case GameStates.START:
+      Tone.start();
       textAlign(CENTER,CENTER);
       textSize(18);
       image(bug,100,50,1300,300);
