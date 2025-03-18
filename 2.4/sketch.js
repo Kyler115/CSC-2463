@@ -213,7 +213,6 @@ function bugs()
 
 function keyPressed() 
 {
-  Tone.start();
   switch(keyCode) {
     case ENTER:
       gameStates = GameStates.PLAY;
